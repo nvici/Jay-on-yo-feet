@@ -1,12 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Checkout from './components/Checkout';
-import Album from './components/Album';
-import { makeStyles } from '@mui/material/styles';
+import Homepage from './components/Homepage';
 
-const useStyles = makeStyles(() => ({
-
-}));
 
 
 const App = () => {
@@ -16,7 +12,7 @@ const App = () => {
         <Routes>
             <Route
             path='/'
-            element = {<Album/>}/>
+            element = {<Homepage/>}/>
         
             <Route 
             path='/checkout'

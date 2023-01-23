@@ -7,7 +7,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -22,7 +21,7 @@ function Copyright() {
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Jays On Your Feet
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -32,7 +31,16 @@ function Copyright() {
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#b39ddb',
+    },
+    secondary: {
+      main: '#fff59d',
+    },
+  },
+});
 
 export default function Album() {
   return (
@@ -57,6 +65,9 @@ export default function Album() {
             pb: 6,
           }}
         >
+          <Container sx={{ py: 8 }} maxWidth="md">
+
+          </Container>
           <Container maxWidth="sm">
             <Typography
               component="h1"
@@ -86,7 +97,7 @@ export default function Album() {
                       // 16:9
                       pt: '56.25%',
                     }}
-                    image="benandjerrys.png"
+                    image="./public/benandjerrys.png"
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
@@ -110,16 +121,13 @@ export default function Album() {
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
         <Typography
           variant="subtitle1"
           align="center"
           color="text.secondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+        
         </Typography>
         <Copyright />
       </Box>
