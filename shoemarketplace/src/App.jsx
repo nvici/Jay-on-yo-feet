@@ -1,16 +1,22 @@
 import React from 'react';
-import { Typography } from '@mui/material';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Checkout from './components/Checkout';
+import Album from './components/Album';
+import { makeStyles } from '@mui/material/styles';
+
+const useStyles = makeStyles(() => ({
+
+}));
 
 
 const App = () => {
     return (<Router>
     
         <div>
-            <h1>Shoe Marketplace</h1>
         <Routes>
-      
+            <Route
+            path='/'
+            element = {<Album/>}/>
         
             <Route 
             path='/checkout'
