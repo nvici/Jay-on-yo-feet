@@ -1,33 +1,22 @@
 import React from 'react';
+import { Typography } from '@mui/material';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Checkout from './components/Checkout';
-<<<<<<< HEAD
 import SignUp from './components/SignUp';
 import LoginPage from './components/LoginPage';
-=======
-import Homepage from './components/Homepage';
-
-
->>>>>>> feature/materialui
 
 const App = () => {
     return (<Router>
     
         <div>
+            <h1>Shoe Marketplace</h1>
         <Routes>
-<<<<<<< HEAD
             <Route 
            path='/loginpage'
            element={<LoginPage/>}/>
            <Route 
            path='/signup'
            element={<SignUp/>}/>
-=======
-            <Route
-            path='/'
-            element = {<Homepage/>}/>
-        
->>>>>>> feature/materialui
             <Route 
             path='/checkout'
             element ={<Checkout/>}
