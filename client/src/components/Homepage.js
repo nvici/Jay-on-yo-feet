@@ -99,10 +99,10 @@ export default function Album() {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <Button variant="h6" color="inherit" noWrap>
+          <Button href="/" variant="h6" color="inherit" noWrap>
             Home
           </Button>
-          <Button variant="h6" color="inherit" noWrap>
+          <Button href="/loginpage" variant="h6" color="inherit" noWrap>
             Log In
           </Button>
           <Button variant="h6" color="inherit" noWrap>
@@ -164,7 +164,7 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="small">Add to cart</Button>
-                    <Button size="small">Checkout</Button>
+                    <Button href="/checkout" size="small">Checkout</Button>
                   </CardActions>
                 </Card>
               </Grid>
