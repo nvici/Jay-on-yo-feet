@@ -14,7 +14,14 @@ import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import 'bulma/css/bulma.min.css';
-
+import benandjerrys from '../assets/bendandjerrys.png';
+import denimwash from '../assets/denimwash.png';
+import dior from '../assets/dior.png';
+import green from '../assets/green.png';
+import offwhite from '../assets/offwhite.png';
+import polkadots from '../assets/polkadots.png';
+import snakeskin from '../assets/snakeskin.png';
+import voodoo from '../assets/voodoo.png';
 
 function Copyright() {
   return (
@@ -29,7 +36,51 @@ function Copyright() {
   );
 }
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+/* const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9]; */
+
+const cards = [
+  {
+    title: "Title 1",
+    description: "Desc 1",
+    img: benandjerrys
+  },
+  {
+    title: "Title 2",
+    description: "Desc 2",
+    img: denimwash
+  },
+  {
+    title: "Title 3",
+    description: "Desc 3",
+    img: dior
+  },
+  {
+    title: "Title 1",
+    description: "Desc 1",
+    img: green
+  },
+  {
+    title: "Title 2",
+    description: "Desc 2",
+    img: offwhite
+  },
+  {
+    title: "Title 3",
+    description: "Desc 3",
+    img: polkadots
+  },
+  {
+    title: "Title 2",
+    description: "Desc 2",
+    img: snakeskin
+  },
+  {
+    title: "Title 3",
+    description: "Desc 3",
+    img: voodoo
+  },
+]
+
 
 const theme = createTheme({
   palette: {
@@ -48,11 +99,14 @@ export default function Album() {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <Button variant="h6" color="inherit" noWrap>
+          <Button href="/" variant="h6" color="inherit" noWrap>
             Home
           </Button>
-          <Button variant="h6" color="inherit" noWrap>
+          <Button href="/loginpage" variant="h6" color="inherit" noWrap>
             Log In
+          </Button>
+          <Button variant="h6" color="inherit" noWrap>
+            Cart
           </Button>
         </Toolbar>
       </AppBar>
@@ -97,21 +151,20 @@ export default function Album() {
                       // 16:9
                       pt: '56.25%',
                     }}
-                    image="./public/benandjerrys.png"
+                    image={card.img}
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      {card.title}
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
+                      {card.description}
                     </Typography>
                   </CardContent>
                   <CardActions>
                     <Button size="small">Add to cart</Button>
-                    <Button size="small">Checkout</Button>
+                    <Button href="/checkout" size="small">Checkout</Button>
                   </CardActions>
                 </Card>
               </Grid>
