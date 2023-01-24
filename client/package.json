@@ -7,7 +7,6 @@
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.5",
-<<<<<<< HEAD:client/package.json
     "@apollo/client": "^3.5.8",
     "@stripe/react-stripe-js": "^1.15.0",
     "@stripe/stripe-js": "^1.44.1",
@@ -17,13 +16,6 @@
     "bootstrap": "^4.4.1",
     "graphql": "^15.4.0",
     "jwt-decode": "^2.2.0",
-=======
-    "@mui/styled-engine-sc": "^5.11.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "bulma": "^0.9.4",
->>>>>>> 250e3e0da5abab21688bf959c209a295fdd06828:shoemarketplace/package.json
     "react": "^18.2.0",
     "react-bootstrap": "1.0.1",
     "react-dom": "^18.2.0",
