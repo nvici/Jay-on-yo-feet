@@ -24,7 +24,7 @@ export default function nav() {
             <Button href="/" variant="h6" color="inherit" noWrap>
               Home
             </Button>
-            <Button href="/login" variant="h6" color="inherit" noWrap>
+            <Button href="/loginpage" variant="h6" color="inherit" noWrap>
               Log In
             </Button>
             <Button href="/signup" variant="h6" color="inherit" noWrap>

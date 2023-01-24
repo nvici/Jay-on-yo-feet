@@ -123,7 +123,7 @@ export default function Album() {
             </Typography>
           </Container>
         </Box>
-        <Container sx={{ py: 8 }} maxWidth="md">
+        <Container sx={{ py: 4  }} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
@@ -131,19 +131,20 @@ export default function Album() {
                 <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
+                    <Typography sx={{ p: 2}} variant="h5" component="h2">
+                      {card.title}
+                    </Typography>
                   <CardMedia
                     component="img"
                     sx={{
                       // 16:9
-                      pt: '56.25%',
+                      pt: '20.25%',
                     }}
                     image={card.img}
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      {card.title}
-                    </Typography>
+                      
                     <Typography>
                       {card.description}
                     </Typography>
