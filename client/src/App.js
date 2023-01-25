@@ -7,17 +7,17 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-
-import Home from './pages/Home';
+import Home from './pages/Homepage';
 import Detail from './pages/Detail';
-import NoMatch from './pages/NoMatch';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
-import Nav from './components/Navbar';
-import { StoreProvider } from './utils/GlobalState';
-import Success from './pages/Success';
+import NoPage from './pages/NoPage';
+import Login from './pages/LoginPage';
+import Signup from './pages/SignUp';
+import Nav from './components/Nav';
+import { ShoeProvider } from './utils/GlobalState';
+import Confirm from './pages/Confirm';
 import OrderHistory from './pages/OrderHistory';
 import Header from './pages/Header';
+import './index.css';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -41,11 +41,12 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <Header />
+  
       <Router>
         <div>
-          <StoreProvider>
+          <ShoeProvider>
             <Nav />
+            <Header />
             <Routes>
               <Route 
                 path="/" 
@@ -61,7 +62,7 @@ function App() {
               />
               <Route 
                 path="/success" 
-                element={<Success />} 
+                element={<Confirm />} 
               />
               <Route 
                 path="/orderHistory" 
@@ -73,10 +74,10 @@ function App() {
               />
               <Route 
                 path="*" 
-                element={<NoMatch />} 
+                element={<NoPage />} 
               />
             </Routes>
-          </StoreProvider>
+          </ShoeProvider>
         </div>
       </Router>
     </ApolloProvider>
