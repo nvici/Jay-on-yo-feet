@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import decode from 'jwt-decode';
 
 class AuthService {
@@ -40,6 +41,6 @@ class AuthService {
     // by doing so, the page will reload and the application's state will be cleared.
     window.location.assign('/');
   }
-}
+};
 
 export default new AuthService();

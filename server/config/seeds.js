@@ -80,8 +80,8 @@ db.once('open', async () => {
       name: 'Voodoo Air Jordan 1',
       category: category[0]._id,
       description:
-        'new yeezy',
-      image: 'This Retro Low Air Jordan features a brown suede toe box and a beige suede quarter paneling. The brown upper is contrasted with some rough overlays that come in pale brown, fossil, and oil-green hues. The lateral heel of this shoe features a stitching voodoo doll. There are Zion and voodoo images beneath the heel tabs of this sneaker.',
+        'This Retro Low Air Jordan features a brown suede toe box and a beige suede quarter paneling. The brown upper is contrasted with some rough overlays that come in pale brown, fossil, and oil-green hues. The lateral heel of this shoe features a stitching voodoo doll. There are Zion and voodoo images beneath the heel tabs of this sneaker.',
+      image: 'voodoo.png',
       price: 323,
       quantity: 50
     },

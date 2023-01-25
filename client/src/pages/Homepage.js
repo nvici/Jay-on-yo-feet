@@ -4,7 +4,7 @@ import Cart from "../components/Cart";
 
 const Home = () => {
   return (
-
+    
     <div className="container">
       <ProductList />
       <Cart />
