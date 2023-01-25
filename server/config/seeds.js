@@ -80,8 +80,8 @@ db.once('open', async () => {
       name: 'Voodoo Air Jordan 1',
       category: category[0]._id,
       description:
-        'new yeezy',
-      image: 'neutral colored shoe in brown with Nike symbol',
+        'neutral colored shoe in brown with Nike symbol',
+      image: 'voodoo.png',
       price: 323,
       quantity: 50
     },
