@@ -16,7 +16,7 @@ db.once('open', async () => {
     {
       name: 'Ben and Jerrys Air Jordan 1',
       description:
-        'black and white shoe with green outline with Nike symbol',
+        'Drawing inspiration from Ben & Jerry’s colorful ice cream pint packaging, this release goes beyond a simple new colorway and features unique detailing that has never been used on the Dunk Low silhouette.',
       image: 'bendandjerrys.png',
       category: category[0]._id,
       price: 1500,
@@ -25,7 +25,7 @@ db.once('open', async () => {
     {
       name: 'Denim Wash Air Jordan 1',
       description:
-        'Denim washed color shoes with Nike symbol',
+        'This model is made up of a bright royal blue sole and a classic white midsole. The base is also white, covered in a pattern that features splashes of black, gray, blue, and white. The Nike swoosh symbol can be seen on the side of the shoe in blue.',
       image: 'denimwash.png',
       category: category[0]._id,
       price: 1850,
@@ -34,7 +34,7 @@ db.once('open', async () => {
     {
       name: 'Dior Air Jordan 1',
       description:
-        'Dior branded shoes color grey and white with Nike symbol',
+        'Jordan Brand connected with Parisian fashion house Dior to create history with the Jordan 1 Retro Low Dior.This is the first time that Jordan has collaborated with a legacy fashion label like Dior, making this release one for the books. This release was limited to only 4,700 pairs, each pair individually numbered.',
       image: 'dior.png',
       category: category[0]._id,
       price: 15000,
@@ -44,7 +44,7 @@ db.once('open', async () => {
       name: 'Green Air Jordan 1',
       category: category[0]._id,
       description:
-        'green and white shoes with Nike symbol',
+        'The Jordan 1 Low Pine Green features a white leather upper with Pine Green overlays and visible stitching. From there, a black Nike swoosh and a perforated toe cap complete the design.',
       image: 'green.png',
       price: 140,
       quantity: 100
@@ -53,7 +53,7 @@ db.once('open', async () => {
       name: 'Off White Air Jordan 1',
       category: category[0]._id,
       description:
-        'All white shoes with orange laces and with Nike symbol ',
+        'This Off-White x Nike Dunk Low is taken from the ‘Dear Summer’ collection, a sprawling follow-up to Virgil Abloh’s first Nike Dunk collaboration from 2019. The low-top makes use of a white leather upper with soft grey suede overlays, along with Virgil Abloh’s calling-card flourishes, which include a plastic zip tie and printed Helvetica text. ',
       image: 'offwhite.png',
       price: 500,
       quantity: 75
@@ -62,7 +62,7 @@ db.once('open', async () => {
       name: 'Polkadots Air Jordan 1',
       category: category[0]._id,
       description:
-        'white and plack shoes with polkadots and with Nike symbol',
+        'In 2008, the Air Jordan 1 Retro Low OG Black / White polka dot was a component of the Countdown Pack celebrating the Air Jordan 23 sneaker launch. In limited-edition packaging, the Countdown Pack included retros of all past Air Jordan shoes.',
       image:'polkadots.png',
       price: 350,
       quantity: 30
@@ -71,7 +71,7 @@ db.once('open', async () => {
       name: 'Snakeskin Air Jordan 1',
       category: category[0]._id,
       description:
-        'rainbow colored shoes in snake style skin with Nike symbol',
+        'The Air Jordan 1 Low ‘Multi Snakeskin’ features an opulent design, highlighted by a black tumbled leather upper with multi-colored snakeskin overlays. The vibrant hues are complemented by metallic gold detailing on the Nike Swoosh, Jumpman logo atop the tongue, and Jordan Wings embroidery on the heel.',
       image: 'snakeskin.png',
       price: 295,
       quantity: 30
@@ -80,7 +80,7 @@ db.once('open', async () => {
       name: 'Voodoo Air Jordan 1',
       category: category[0]._id,
       description:
-        'neutral colored shoe in brown with Nike symbol',
+        'This Retro Low Air Jordan features a brown suede toe box and a beige suede quarter paneling. The brown upper is contrasted with some rough overlays that come in pale brown, fossil, and oil-green hues. The lateral heel of this shoe features a stitching voodoo doll. There are Zion and voodoo images beneath the heel tabs of this sneaker.',
       image: 'voodoo.png',
       price: 323,
       quantity: 50
