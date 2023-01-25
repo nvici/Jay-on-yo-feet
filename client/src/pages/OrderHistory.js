@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { useQuery } from '@apollo/client';
 import { QUERY_USER } from '../utils/queries';
+import { Typography } from '@mui/material';
 
 function OrderHistory() {
   const { data } = useQuery(QUERY_USER);
@@ -19,7 +20,7 @@ function OrderHistory() {
 
         {user ? (
           <>
-            <h2>
+            <h2 className='center'>
               Order History for {user.firstName} {user.lastName}
             </h2>
             {user.orders.map((order) => (
@@ -44,6 +45,16 @@ function OrderHistory() {
             ))}
           </>
         ) : null}
+                  <footer>
+          <Typography sx={{ pt: 10, pb: 2}}variant="body2" color="text.secondary" align="center">
+            {' © '}
+            <Link color="inherit" href="https://mui.com/">
+             Jays On Your Feet
+            </Link>{' '}
+          {new Date().getFullYear()}
+            {'.'}
+          </Typography>
+          </footer>
       </div>
     </>
   );

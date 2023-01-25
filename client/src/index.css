@@ -1,9 +1,9 @@
 :root {
     --primary: #00000088;
-    --secondary: rgba(32, 19, 107, 0.458);
-    --tertiary: #ad8479;
+    --secondary: rgba(242, 135, 229, 0.458);
+    --tertiary: #10010ec1;
     --light: white;
-    --dark: #1881a7;
+    --dark: #10010ec1;
     --error: rgb(209, 42, 0);
     --spacing-one: calc(1rem * 0.5);
     --spacing-two: calc(1rem);
@@ -20,9 +20,9 @@
   
   body {
     margin: 0;
-    padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
+    padding: 0px;
+    font-family: 'Serif';
+    font-weight: 500;
     line-height: 1.5;
     font-size: 16px;
     color: var(--dark);
@@ -34,9 +34,7 @@
   h4,
   h5,
   h6 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
-    margin: 5px 0;
+    margin: 50px 0px;
     line-height: 1.25;
   }
   
@@ -46,6 +44,9 @@
   
   h2 {
     font-size: 2rem;
+    margin: auto;
+    padding-left: 50px;
+    padding-bottom: 30px;
   }
   
   h3 {
@@ -53,7 +54,7 @@
   }
   
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   
   h5 {
@@ -64,15 +65,27 @@
     font-size: 1rem;
   }
   
+  .center {
+    margin: auto;
+    width: 50%;
+    padding-top: 10px;
+  }
+
+  .paddingleft {
+    padding-left: 90px;
+  }
+
+
   p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-family: 'serif';
+    font-weight: 500;
     margin-top: 0;
   }
   
   a {
     color: var(--tertiary);
     text-decoration: none;
-    font-weight: bold;
   }
   
   a:hover {
@@ -203,7 +216,7 @@
   .error-text {
     color: var(--error);
   }
-  
+
   @media screen and (max-width: 768px) {
     .card {
       width: 100%;
