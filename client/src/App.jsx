@@ -5,10 +5,12 @@ import Checkout from './components/Checkout';
 import SignUp from './components/SignUp';
 import LoginPage from './components/LoginPage';
 import Homepage from './components/Homepage';
+import Nav from './components/Navbar';
 const App = () => {
     return (<Router>
     
         <div>
+            <Nav/>
         <Routes>
         <Route 
            path='/'
