@@ -5,6 +5,8 @@ import { UPDATE_PRODUCTS } from '../../utils/action';
 import { useQuery } from '@apollo/client';
 import { QUERY_SHOES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helper';
+import { Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 function ProductList() {
@@ -45,7 +47,6 @@ function ProductList() {
 
   return (
     <div className="my-2">
-      <h2>Our Products:</h2>
       {state.products.length ? (
         <div className="flex-row">
           {filterProducts().map((product) => (
@@ -62,7 +63,18 @@ function ProductList() {
       ) : (
         <h3>You haven't added any products yet!</h3>
       )}
+                <footer>
+          <Typography sx={{ pt: 10, pb: 2}}variant="body2" color="text.secondary" align="center">
+            {' © '}
+            <Link color="inherit" href="https://mui.com/">
+             Jays On Your Feet
+            </Link>{' '}
+          {new Date().getFullYear()}
+            {'.'}
+          </Typography>
+          </footer>
     </div>
+    
   );
 }
 

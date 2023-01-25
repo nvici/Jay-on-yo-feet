@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-
 import Cart from '../components/Cart';
 import { useShoeContent } from '../utils/GlobalState';
 import {
@@ -12,6 +11,7 @@ import {
 } from '../utils/action';
 import { QUERY_SHOES } from '../utils/queries';
 import { idbPromise } from '../utils/helper';
+import { Typography } from '@mui/material';
 
 function Detail() {
   const [state, dispatch] = useShoeContent();
@@ -84,13 +84,20 @@ function Detail() {
     <>
       {currentProduct && cart ? (
         <div className="container my-1">
-          <Link to="/">← Back to Products</Link>
+          <Link to="/" >← Back to Products</Link>
 
-          <h2>{currentProduct.name}</h2>
+          <h2 className='center'>{currentProduct.name}</h2>
 
-          <p>{currentProduct.description}</p>
+          <p className='center'>{currentProduct.description}</p>
 
-          <p>
+            <div className='center'>
+          <img
+            src={`/images/${currentProduct.image}`}
+            alt={currentProduct.name}
+          />
+          </div>
+          
+          <p className='center paddingleft'>
             <strong>Price:</strong>${currentProduct.price}{' '}
             <button onClick={addToCart}>Add to Cart</button>
             <button
@@ -100,11 +107,16 @@ function Detail() {
               Remove from Cart
             </button>
           </p>
-
-          <img
-            src={`/images/${currentProduct.image}`}
-            alt={currentProduct.name}
-          />
+          <footer>
+          <Typography sx={{ pt: 10, pb: 2}}variant="body2" color="text.secondary" align="center">
+            {' © '}
+            <Link color="inherit" href="https://mui.com/">
+             Jays On Your Feet
+            </Link>{' '}
+          {new Date().getFullYear()}
+            {'.'}
+          </Typography>
+          </footer>
         </div>
       ) : null}
       <Cart />

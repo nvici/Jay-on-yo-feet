@@ -1,18 +1,22 @@
 import background from '../assets/banner.jpg'
+import { Container } from '@mui/material';
 
 function Header() {
     const myStyle={
         backgroundImage: `url(${background})`,
-        height:'85vh',
-        marginTop:'-10px',
-        fontSize:'5px',
-        backgroundSize: 'cover',
+        width: '50%',
+        height:'45vh',
+        backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
+  
     };
     return (
-      <div style={myStyle}>
+      <Container 
+      defaultValue={30}
+      sx={{ mt: 4, mb: 4 }}
+      style={myStyle}>
           
-      </div>
+      </Container>
     );
     }
     

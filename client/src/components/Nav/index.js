@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./style.css"
 
 
+
 function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
@@ -24,6 +25,9 @@ function Nav() {
       return (
         <ul className="flex-row">
           <li className="mx-1">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="mx-1">
             <Link to="/signup">Signup</Link>
           </li>
           <li className="mx-1">
@@ -36,12 +40,7 @@ function Nav() {
 
   return (
     <header className="flex-row px-1">
-      <h1>
-        <Link to="/">
           <span role="img" aria-label="shopping bag"></span>
-          Jay on yo Feet
-        </Link>
-      </h1>
 
       <nav>{showNavigation()}</nav>
     </header>

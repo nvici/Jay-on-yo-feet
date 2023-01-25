@@ -1,6 +1,6 @@
 .navbar {
     overflow: hidden;
-    background-color: rgba(128, 0, 128, 0.458);
+    background-color: rgba(223, 44, 223, 0.458);
   }
   
   .navbar a {
@@ -10,6 +10,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
   }
   
   .subnav {
